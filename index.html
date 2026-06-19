@@ -6,76 +6,153 @@
 <title>Портфоліо Євгенії</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#0f172a,#1e293b);
-    color:white;
-    margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#07152e,#0f234a);
+color:white;
+line-height:1.6;
+overflow-x:hidden;
 }
 
 header{
-    text-align:center;
-    padding:80px 20px;
+text-align:center;
+padding:100px 20px;
+animation:fadeIn 1s ease;
 }
 
 h1{
-    font-size:48px;
-    margin-bottom:10px;
+font-size:60px;
+margin-bottom:10px;
+text-shadow:0 0 20px rgba(255,255,255,.3);
 }
 
 .subtitle{
-    color:#60a5fa;
-    font-size:22px;
-    margin-bottom:25px;
+font-size:24px;
+color:#5ea2ff;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:linear-gradient(45deg,#2563eb,#3b82f6);
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.3s;
+box-shadow:0 10px 30px rgba(37,99,235,.4);
+}
+
+.btn:hover{
+transform:translateY(-5px) scale(1.05);
 }
 
 .section{
-    padding:40px 20px;
-    max-width:1000px;
-    margin:auto;
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+animation:fadeUp 1s ease;
+}
+
+h2{
+font-size:40px;
+margin-bottom:25px;
 }
 
 .card{
-    background:#1e293b;
-    padding:20px;
-    margin:15px 0;
-    border-radius:15px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.3);
-    transition:0.3s;
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(10px);
+padding:25px;
+margin:20px 0;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
+transform:translateY(-8px);
+box-shadow:0 15px 40px rgba(59,130,246,.35);
 }
 
-.button{
-    display:inline-block;
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    padding:12px 24px;
-    border-radius:10px;
-    transition:0.3s;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
 }
 
-.button:hover{
-    background:#3b82f6;
+.gallery img{
+width:100%;
+border-radius:15px;
+transition:.4s;
 }
 
-a{
-    color:#60a5fa;
-    text-decoration:none;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    color:#94a3b8;
-    margin-top:40px;
+.gallery img:hover{
+transform:scale(1.03);
 }
 
 .skills{
-    line-height:2;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.skill{
+background:rgba(255,255,255,.06);
+padding:15px;
+border-radius:15px;
+text-align:center;
+font-weight:bold;
+}
+
+.contacts{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+footer{
+text-align:center;
+padding:40px 20px;
+color:#b0b0b0;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(-30px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:42px;
+}
+
+.subtitle{
+font-size:20px;
+}
+
+h2{
+font-size:32px;
+}
+
+.btn{
+padding:12px 25px;
+}
 }
 </style>
 
@@ -98,10 +175,32 @@ footer{
 
 <div class="section">
     <h2>Про мене</h2>
+    <div class="card">
+        Створюю сайти, Telegram-ботів, банери та презентації. Постійно навчаюсь та розвиваюсь у сфері IT.
+    </div>
+</div>
+
+<div class="section">
+    <h2>Галерея робіт</h2>
 
     <div class="card">
-        Створюю сайти, Telegram-ботів, банери та презентації.
-        Постійно навчаюсь та розвиваюсь у сфері IT.
+        <h3>Банер Telegram-ботів</h3>
+        <img src="canva.jpg" width="100%">
+    </div>
+
+    <div class="card">
+        <h3>Монтаж відео в CapCut</h3>
+        <img src="capcut.jpg" width="100%">
+    </div>
+
+    <div class="card">
+        <h3>Код Telegram-бота</h3>
+        <img src="bot-code.png" width="100%">
+    </div>
+
+    <div class="card">
+        <h3>Код веб-сайту</h3>
+        <img src="site-code.jpg" width="100%">
     </div>
 </div>
 
