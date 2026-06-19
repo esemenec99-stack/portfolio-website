@@ -8,68 +8,124 @@
 <style>
 body{
     font-family: Arial, sans-serif;
-    background:#0f172a;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
     color:white;
     margin:0;
-    text-align:center;
 }
 
 header{
-    padding:60px 20px;
+    text-align:center;
+    padding:80px 20px;
 }
 
 h1{
     font-size:48px;
+    margin-bottom:10px;
 }
 
 .subtitle{
     color:#60a5fa;
     font-size:22px;
+    margin-bottom:25px;
 }
 
 .section{
     padding:40px 20px;
+    max-width:1000px;
+    margin:auto;
 }
 
 .card{
     background:#1e293b;
-    margin:15px auto;
     padding:20px;
+    margin:15px 0;
     border-radius:15px;
-    max-width:600px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.button{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:#3b82f6;
+}
+
+a{
+    color:#60a5fa;
+    text-decoration:none;
 }
 
 footer{
+    text-align:center;
     padding:30px;
-    background:#111827;
+    color:#94a3b8;
+    margin-top:40px;
+}
+
+.skills{
+    line-height:2;
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
-    <h1>Євгенія </h1>
-    <p class="subtitle">Python-розробник • Telegram-боти • Портфоліо</p>
+    <h1>Євгенія</h1>
+
+    <p class="subtitle">
+        Python Developer • Telegram-боти • Веб-сайти
+    </p>
+
+    <a class="button"
+       href="https://t.me/esemenec99"
+       target="_blank">
+       Написати в Telegram
+    </a>
 </header>
 
 <div class="section">
-    <h2>Мої навички</h2>
+    <h2>Про мене</h2>
 
     <div class="card">
-        🤖 Створення Telegram-ботів на Python
+        Створюю сайти, Telegram-ботів, банери та презентації.
+        Постійно навчаюсь та розвиваюсь у сфері IT.
     </div>
+</div>
+
+<div class="section">
+    <h2>Мої послуги</h2>
 
     <div class="card">
         🌐 Створення сайтів
     </div>
 
     <div class="card">
-        📷 Вивчаю обробку фото
+        🤖 Створення Telegram-ботів
     </div>
 
     <div class="card">
-        🎬 Вивчаю монтаж відео
+        🎨 Створення банерів
+    </div>
+
+    <div class="card">
+        🎬 Монтаж відео в CapCut
+    </div>
+
+    <div class="card">
+        📊 Створення презентацій
     </div>
 </div>
 
@@ -77,70 +133,52 @@ footer{
     <h2>Мої проєкти</h2>
 
     <div class="card">
-        Telegram Bot Responder-бот-відповідач
+        Telegram Bot Responder — бот-відповідач
     </div>
 
     <div class="card">
-        Telegram Todo Bot-список завдань
+        Telegram Todo Bot — список завдань
     </div>
 
     <div class="card">
-        Telegram Expenses Bot-облік витрат
+        Telegram Expenses Bot — облік витрат
     </div>
-</div>
 </div>
 
 <div class="section">
-    <h2>🎬 Мої відео-проєкти</h2>
+    <h2>Мої навички</h2>
 
-    <div class="card">
-        <h3>Портфоліо Python та Telegram-ботів</h3>
-        <video width="100%" controls>
-            <source src="portfolio_video.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <div class="card">
-        <h3>Створення сайтів на Python</h3>
-        <video width="100%" controls>
-            <source src="website_video.mp4" type="video/mp4">
-        </video>
+    <div class="card skills">
+        ✔ Python<br>
+        ✔ HTML<br>
+        ✔ CSS<br>
+        ✔ GitHub<br>
+        ✔ Telegram Bots<br>
+        ✔ Canva<br>
+        ✔ CapCut
     </div>
 </div>
+
 <div class="section">
-    <h2>Про мене</h2>
-
-    <div class="card">
-        <p>
-            Вітаю! Я Євгенія.
-            Створюю сайти, Telegram-ботів, банери,
-            презентації та займаюся монтажем відео в CapCut.
-            Постійно навчаюся та розвиваю навички в IT.
-        </p>
-    </div>
-</div>
-    <div class="section">
     <h2>Контакти</h2>
 
     <div class="card">
-        <p>
-            Telegram:
-            <a href="https://t.me/esemenec99" target="_blank">
-                @esemenec99
-            </a>
-        </p>
+        📧 GitHub:
+        <a href="https://github.com/esemenec99-stack" target="_blank">
+            github.com/esemenec99-stack
+        </a>
 
-        <p>
-            GitHub:
-            <a href="https://github.com/esemenec99-stack" target="_blank">
-                esemenec99-stack
-            </a>
-        </p>
+        <br><br>
+
+        📱 Telegram:
+        <a href="https://t.me/esemenec99" target="_blank">
+            @esemenec99
+        </a>
     </div>
 </div>
+
 <footer>
-<footer>
-    © 2026 Портфоліо Євгенії
+    © 2026 Портфоліо Євгенії • Python Developer • Telegram @esemenec99
 </footer>
 
 </body>
